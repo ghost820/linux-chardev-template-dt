@@ -7,10 +7,9 @@
 	fragment@0 {
 		target-path = "/";
 		__overlay__ {
-			chardev1: chardev-1 {
-				compatible = "org,chardev-1";
-				org,serial = "CHARDEV1";
-				status = "okay";
+			chardev: chardev {
+				compatible = "chardev";
+				ghost,someprop = "";
 			};
 		};
 	};
